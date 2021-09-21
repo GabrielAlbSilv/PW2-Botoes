@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/borda_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira o usuário"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:drawableEnd="@drawable/ic_baseline_person"
+        />
+        <!-- android:background="@drawable/borda_edit" == chamando o arquivo xml que configura a borda-->
+        <!--  android:padding="10dp" == margem entre o texto e borda-->
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/borda_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira a senha"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:drawableEnd="@drawable/ic_baseline_lock"
+            />
+        <!--  android:maxLength="50" == limite de 50 caracteres -->
+
+        <Button
+            style=""
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"/>
+
+        <Button
+            android:background="@drawable/borda_edit"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sairr"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>
